@@ -34,7 +34,7 @@ app.use(useragent.express());
 
 
 
-//const uri = "mongodb+srv://JOBManagementData:WA1Pxw2ttbTdMa9h@cluster0.wqhd5vt.mongodb.net/?retryWrites=true&w=majority";
+// here is my project API : https://job-server-box.vercel.app
 const uri = `mongodb+srv://${process.env.DATA_BASE_USERNAME}:${process.env.DATA_BASE_PASSWORD}@cluster0.wqhd5vt.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 // client.connect(err => {
